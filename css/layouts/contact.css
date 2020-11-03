@@ -1,0 +1,8 @@
+.contact {
+  padding: 55px 0;
+  position: relative; }
+  .contact > img {
+    display: block;
+    width: 100%; }
+  .contact_info {
+    position: absolute; }

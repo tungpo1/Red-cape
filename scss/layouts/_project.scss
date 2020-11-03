@@ -1,0 +1,215 @@
+.project {
+	background-color: #101010;
+	padding-bottom: 80px;
+	@media all and (max-width: 1199px){
+		padding-bottom: 60px;
+	}
+	@media all and (max-width: 767px){
+		padding-bottom: 40px;
+	}
+	&_title {
+		font-size: 26px;
+		color: #fff;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 49px;
+		padding-top: 72px;
+		@media all and (max-width: 1199px){
+			font-size: 22px;
+			margin-bottom: 40px;
+			padding-top: 52px;
+		}
+		@media all and (max-width: 767px){
+			font-size: 18px;
+			margin-bottom: 25px;
+			padding-top: 32px;
+		}
+	}
+	.nav {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+		@media all and (max-width: 991px){
+			margin-bottom: 25px;
+			overflow-x: scroll;
+    		flex-wrap: nowrap;
+    		justify-content: flex-start;
+    		>li {
+    			display: inline-flex;
+    			>a {
+    				display: flex;
+    				white-space: nowrap;
+    			}
+    			&:last-child {
+    				a {
+    					margin-right: 0;
+    				}
+    			}
+    		}
+		}
+		@media all and (max-width: 767px){
+			margin-bottom: 25px;
+		}
+		&-item {
+			margin-bottom: 20px;
+			@media all and (max-width: 767px){
+				margin-bottom: 15px;
+			}
+		}
+		&-link {
+			font-size: 16px;
+			text-transform: uppercase;
+			color: #717175;
+			border: 1px solid #262626;
+			background-color: #101010 !important;
+			padding: 10px 37px;
+			font-weight: 600;
+			border-radius: 0;
+			margin-right: 20px;
+			animation: all 0.3s ease;
+			@media all and (max-width: 1199px){
+				padding: 5px 28px;
+				font-size: 14px;
+			}
+			@media all and (max-width: 991px){
+				padding: 7px 35px;
+				font-size: 14px;
+			}
+			@media all and (max-width: 767px){
+				font-size: 14px;
+			}
+			&:last-chid {
+				margin-right: 0;
+			}
+			&.active, &:hover {
+				color: #fff;
+				border-color: #fff;
+			}
+		}
+	}
+	&_image {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		&_item {
+			position: relative;
+			width: 25%;
+			cursor: pointer;
+			display: inline-flex;
+			overflow: hidden;
+			@media all and (max-width: 767px){
+				width: 50%;
+			}
+			>img {
+				width: 100%;
+				object-fit: cover;
+				transition: all 0.5s ease;
+
+			}
+			&:hover {
+				>img {
+					transform: scale(1.1);
+				}
+			}
+			.overlay {
+				// background-color: rgba(255, 255, 255, 0.2);
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				opacity: 0;
+				transition: all 0.3s ease;
+				z-index: 1;
+				>div {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					padding: 60px;
+					text-align: center;
+					width: 100%;
+					@media all and (max-width: 1599px){
+						padding: 40px;
+					}
+					@media all and (max-width: 1199px){
+						padding: 25px;
+					}
+					@media all and (max-width: 991px){
+						padding: 15px;
+					}
+					@media all and (max-width: 767px){
+						padding: 15px;
+					}
+					a {
+						&:hover {
+							opacity: 0.7;
+						}
+					}
+					img {
+						margin-bottom: 30px;
+						@media all and (max-width: 1199px){
+							width: 45px;
+							margin-bottom: 20px;
+						}
+						@media all and (max-width: 991px){
+							width: 30px;
+							margin-bottom: 12px;
+						}
+						@media all and (max-width: 349px){
+							width: 25px;
+							margin-bottom: 5px;
+						}
+					}
+				}
+			}
+			&-title {
+				padding: 0;
+				>a {
+					font-weight: 600;
+					font-size: 18px;
+					line-height: 23px;
+					color: #fffefe;
+					@media all and (max-width: 1199px){
+						font-size: 15px;
+					}
+					@media all and (max-width: 991px){
+						font-size: 13px;
+						line-height: 18px;
+					}
+					@media all and (max-width: 767px){
+						font-size: 12px;
+						line-height: 14px;
+					}
+					@media all and (max-width: 349px){
+						font-size: 10px;
+						line-height: 12px;
+					}
+				}
+			}
+			&:hover {
+				.overlay {
+					opacity: 1;
+				}
+			}
+		}	
+	}
+	.tab-content {
+		margin-bottom: 60px;
+		@media all and (max-width: 1199px){
+			margin-bottom: 40px;
+		}
+		@media all and (max-width: 767px){
+			margin-bottom: 25px;
+		}
+	}
+	&_btn {
+		color: #ffffff;
+		margin: 0 auto;
+		display: block;
+		border-color: #ffffff;
+	}
+}

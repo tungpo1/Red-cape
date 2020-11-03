@@ -1,0 +1,54 @@
+.contact {
+  position: relative; }
+  .contact > img {
+    display: block;
+    width: 100%;
+    min-height: 253px;
+    -o-object-fit: cover;
+    object-fit: cover; }
+    @media all and (max-width: 991px) {
+      .contact > img {
+        min-height: 232px; } }
+    @media all and (max-width: 767px) {
+      .contact > img {
+        min-height: 246px; } }
+  .contact_info {
+    position: absolute;
+    width: 100%;
+    top: 56px; }
+    @media all and (max-width: 991px) {
+      .contact_info {
+        top: 46px; } }
+    @media all and (max-width: 767px) {
+      .contact_info {
+        top: 36px; } }
+    .contact_info_title {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #fffefe;
+      font-weight: 600;
+      margin-bottom: 18px; }
+      @media all and (max-width: 767px) {
+        .contact_info_title {
+          margin-bottom: 15px;
+          line-height: 24px;
+          padding: 0 15px; } }
+    .contact_info_text {
+      color: #fffefe;
+      font-size: 14px;
+      margin-bottom: 19px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%; }
+      @media all and (max-width: 991px) {
+        .contact_info_text {
+          margin-bottom: 15px;
+          padding: 0 15px; } }
+      .contact_info_text i.fa {
+        padding: 0;
+        margin-right: 4px;
+        margin-bottom: 2px; }
+        .contact_info_text i.fa.fa-mobile {
+          font-size: 18px; }
+      .contact_info_text:last-child {
+        margin-bottom: 0; }
